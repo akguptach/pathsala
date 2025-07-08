@@ -1,0 +1,10 @@
+.main-nav .has-submenu span {
+  color: inherit; /* Match the text color */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Add pointer cursor */
+  display: inline-block; /* Match the display of <a> */
+}
+
+.main-nav .has-submenu span:hover {
+  text-decoration: underline; /* Optional: mimic hover effect for links */
+}
