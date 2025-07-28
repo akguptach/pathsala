@@ -359,3 +359,14 @@ export interface DeleteRequestInterface {
 export interface AppState {
   mouseOverSidebar: string;
 }
+export interface SchoolCard {
+  id: number;
+  name: string;
+  board: string;
+  type: string;
+  address: string;
+  rating: number;
+  views: number;
+  badge?: string;
+  image: string;
+}

@@ -119,6 +119,12 @@ export const publicRoutes = [
     route: Route,
   },
   {
+    path: routes.addschool,
+    name: "Root",
+    element: <AddSchoolForm/>,
+    route: Route,
+  },
+  {
     path: routes.homeone,
     element: <HomeOne />,
     route: Route,

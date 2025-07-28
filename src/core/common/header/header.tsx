@@ -73,7 +73,7 @@ const Header = () => {
   }, [dataTheme])
   useEffect(() => {
     const path = location.pathname;
-    const pathArray = path.split("/").filter(Boolean); 
+    const pathArray = path.split("/").filter(Boolean);
     setBasePath(pathArray[0])
   }, [location.pathname])
   const DarkButton = () => {
@@ -100,21 +100,21 @@ const Header = () => {
     )
   }
   const getDynamicRoute = (menuItem: any) => {
-  switch (menuItem.tittle) {
-    case "Explore Schools":
-      return all_routes.schoolList; // Replace with the actual route for "Explore Schools"
-    case "AddSchools":
-      return all_routes.addschool; // Replace with the actual route for "AddSchools"
-    // case "Compare":
-    //   return all_routes.compare; // Replace with the actual route for "Compare"
-    // case "Add Resource":
-    //   return all_routes.addResource; // Replace with the actual route for "Add Resource"
-    // case "Blog":
-    //   return all_routes.blog; // Replace with the actual route for "Blog"
-    default:
-      return all_routes.homeone; // Fallback to a default route
-  }
-};
+    switch (menuItem.tittle) {
+      case "Explore Schools":
+        return all_routes.schoolList; // Replace with the actual route for "Explore Schools"
+      case "AddSchools":
+        return all_routes.addschool; // Replace with the actual route for "AddSchools"
+      // case "Compare":
+      //   return all_routes.compare; // Replace with the actual route for "Compare"
+      // case "Add Resource":
+      //   return all_routes.addResource; // Replace with the actual route for "Add Resource"
+      // case "Blog":
+      //   return all_routes.blog; // Replace with the actual route for "Blog"
+      default:
+        return all_routes.homeone; // Fallback to a default route
+    }
+  };
 
   return (
     <>
@@ -151,48 +151,23 @@ const Header = () => {
                 </Link>
               </div>
               <ul className={`main-nav ${isMegaMenu ? 'active' : ''}`}>
-  {header.map((mainMenus: any, mainIndex) => (
-    <React.Fragment key={mainIndex}>
-      {mainMenus ? (
-        <li
-          key={mainIndex}
-          className={`has-submenu megamenu ${location.pathname.includes('index') ? "active" : ""}`}
-          onClick={() => toggleSidebar(mainMenus.tittle)}
-        >
-          <Link to={getDynamicRoute(mainMenus)}>
-            {mainMenus.tittle}
-          </Link>
-          <ul></ul>
-        </li>
-      ) : null}
-    </React.Fragment>
-  ))}
-</ul>
-
-              {/* <ul className={`main-nav ${isMegaMenu ? 'active' : ''}`}>
                 {header.map((mainMenus: any, mainIndex) => (
                   <React.Fragment key={mainIndex}>
                     {mainMenus ? (
                       <li
                         key={mainIndex}
-                        className={
-                          `has-submenu megamenu ${location.pathname.includes('index')
-                            ? "active"
-                            : ""}`
-                        }
+                        className={`has-submenu megamenu ${location.pathname.includes('index') ? "active" : ""}`}
                         onClick={() => toggleSidebar(mainMenus.tittle)}
                       >
-                        <Link to={all_routes.schoolList}>{mainMenus.tittle}</Link>
-                        <ul>
-
-                        </ul>
+                        <Link to={getDynamicRoute(mainMenus)}>
+                          {mainMenus.tittle}
+                        </Link>
+                        <ul></ul>
                       </li>
-                    ) : null
-                    }
+                    ) : null}
                   </React.Fragment>
                 ))}
-
-              </ul> */}
+              </ul>
             </div>
             {location.pathname === '/index' ?
               <div className="header-btn d-flex align-items-center">
@@ -215,14 +190,11 @@ const Header = () => {
                   Register
                 </Link>
               </div> : null
-           }
+            }
           </div>
         </div>
       </header>
     </>
-
-
-
   )
 }
 
