@@ -1,5 +1,5 @@
 import BannerSection from './section/banner'
-import Benefits from './section/benefits'
+import RecommededSchools from './section/RecommededSchools'
 import Institutions from './section/institutions'
 import Topcourses from './section/top-courses'
 import Trust from './section/trust'
@@ -19,16 +19,16 @@ const HomeOne = () => {
   return (
     <div>
       <BannerSection />
-      <Benefits />
+      <RecommededSchools />
        {/* <CustomSliser/> */}
-      <Institutions />
-      <Topcourses />
-      <Trust/>
+      {/* <Institutions /> */}
+      {/* <Topcourses />
+      <Trust/> */}
       <Featuredcourse />
       <Community />
-      <Clinet />
-      <Howitworks />
-      <Featureinstructor />
+      {/* <Clinet /> */}
+      {/* <Howitworks /> */}
+      {/* <Featureinstructor /> */}
       <Testimonials />
       <Faq/>
       <Latestblog />

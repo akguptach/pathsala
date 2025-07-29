@@ -10,179 +10,189 @@ const Testimonials = () => {
 
     //Testimonial Slider
     const testimonialslider = {
+        dots: false,
         infinite: true,
+        speed: 300,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         responsive: [
-          {
-            breakpoint: 992,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              infinite: true,
-              dots: false,
+            {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
             },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
             },
-          },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            },
         ],
-      };
+    };
 
-      const route = all_routes;
+    const route = all_routes;
 
     return (
         <>
             {/* testimonials */}
-            <div className="testimonials-section testimonials-sec-one text-center">
+            <section className="featured-courses-section">
                 <div className="container">
-                    <div className="section-header text-center" data-aos="fade-up">
+                    <div className="section-header text-center">
                         <span className="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">
-                            Featured Instructors
+                            Featured Tutors
                         </span>
-                        <h2>Top Class &amp; Professional Instructors</h2>
-                        <p>Words from Those Who’ve Experienced Real Growth</p>
+                        <h2>Find the ideal tutor to guide your child’s learning journey.</h2>
+                        <p>
+                            PatashalaKart connects you with experienced tutors and all the essential details you need to make the right choice.
+                        </p>
                     </div>
-                    <Slider {...testimonialslider} className="testimonials-slider lazy mt-4">
-                        <div>
-                            <div
-                                className="testimonials-item rounded-3 bg-white"
-                                data-aos="flip-right"
-                            >
-                                <div className="position-relative d-inline-flex">
-                                    <div className="avatar rounded-circle avatar-xxl border border-white border-3">
-                                        <Link to={route.studentsDetails}>
+                    <div className='feature-course-slider-22 top-courses-slider'>
+                        <Slider {...testimonialslider}>
+
+                            <div>
+                                <div className="course-item">
+                                    <div className="course-img">
+                                        <Link to={route.courseDetails}>
                                             <ImageWithBasePath
-                                                className="img-fluid rounded-circle"
-                                                src="./assets/img/user/user-41.jpg"
+                                                src="assets/img/tutors/tutor1.jpg"
                                                 alt="img"
+                                                className="img-fluid"
                                             />
                                         </Link>
                                     </div>
-                                    <i className="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1" />
+                                    <div className="pb-3 border-bottom mb-3">
+                                        <h5>
+                                            <Link to={route.courseDetails}>
+                                                Aaradhya Sharma
+                                            </Link>
+                                        </h5>
+                                    </div>
+                                    <p className="text-muted">
+                                        Find expert tutors specialized in early childhood education to help your child grow with the right guidance and care.
+                                    </p>
                                 </div>
-                                <h6 className="mb-1">
-                                    <Link to={route.studentsDetails}>Brenda Slaton</Link>
-                                </h6>
-                                <p className="designation">Designer</p>
-                                <p className="mb-3 text-truncate line-clamb-2">
-                                    This mentor helped me understand concepts that I had been
-                                    struggling with for weeks.
-                                </p>
-                                <div>
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                </div>
+
                             </div>
-                        </div>
-                        <div>
-                            <div
-                                className="testimonials-item rounded-3 bg-white"
-                                data-aos="flip-right"
-                            >
-                                <div className="position-relative d-inline-flex">
-                                    <div className="avatar rounded-circle avatar-xxl border border-white border-3">
-                                        <Link to={route.studentsDetails}>
+                            <div>
+                                <div className="course-item">
+                                    <div className="course-img">
+                                        <Link to={route.courseDetails}>
                                             <ImageWithBasePath
-                                                className="img-fluid rounded-circle"
-                                                src="./assets/img/user/user-42.jpg"
+                                                 src="assets/img/tutors/tutor2.jpg"
                                                 alt="img"
+                                                className="img-fluid"
                                             />
                                         </Link>
                                     </div>
-                                    <i className="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1" />
-                                </div>
-                                <h6 className="mb-1">
-                                    <Link to={route.studentsDetails}>Adrian Dennis</Link>
-                                </h6>
-                                <p className="designation">Developer</p>
-                                <p className="mb-3 text-truncate line-clamb-2">
-                                    I’ve learned so much from my mentor’s personal experience.
-                                </p>
-                                <div>
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
+
+                                    <div className="pb-3 border-bottom mb-3">
+                                        <h5>
+                                            <Link to={route.courseDetails}>
+                                               Ravi Kumar 
+                                            </Link>
+                                        </h5>
+                                    </div>
+
+                                      <p className="text-muted">
+                                        Find expert tutors specialized in early childhood education to help your child grow with the right guidance and care.
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                        <div>
-                            <div
-                                className="testimonials-item rounded-3 bg-white"
-                                data-aos="flip-right"
-                            >
-                                <div className="position-relative d-inline-flex">
-                                    <div className="avatar rounded-circle avatar-xxl border border-white border-3">
-                                        <Link to={route.studentsDetails}>
+                            <div>
+                                <div className="course-item">
+                                    <div className="course-img">
+                                        <Link to={route.courseDetails}>
                                             <ImageWithBasePath
-                                                className="img-fluid rounded-circle"
-                                                src="./assets/img/user/user-43.jpg"
+                                              src="assets/img/tutors/tutor4.jpg"
                                                 alt="img"
+                                                className="img-fluid"
+                                            />
+                                        </Link>
+
+                                    </div>
+
+                                    <div className="pb-3 border-bottom mb-3">
+                                        <h5>
+                                            <Link to={route.courseDetails}>
+                                                Kunal Das
+                                            </Link>
+                                        </h5>
+                                    </div>
+                                      <p className="text-muted">
+                                        Find expert tutors specialized in early childhood education to help your child grow with the right guidance and care.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="course-item">
+                                    <div className="course-img">
+                                        <Link to={route.courseDetails}>
+                                            <ImageWithBasePath
+                                               src="assets/img/tutors/tutor3.jpg"
+                                                alt="img"
+                                                className="img-fluid"
                                             />
                                         </Link>
                                     </div>
-                                    <i className="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1" />
-                                </div>
-                                <h6 className="mb-1">
-                                    <Link to={route.studentsDetails}>Adrian Coztanza</Link>
-                                </h6>
-                                <p className="designation">Architect</p>
-                                <p className="mb-3 text-truncate line-clamb-2">
-                                    The advice was useful, but I wish my mentor had been more
-                                    available for follow-up discussions.
-                                </p>
-                                <div>
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
+                                    <div className="pb-3 border-bottom mb-3">
+                                        <h5>
+                                            <Link to={route.courseDetails}>
+                                                Day Schools
+                                            </Link>
+                                        </h5>
+                                    </div>
+                                     <p className="text-muted">
+                                        Find expert tutors specialized in early childhood education to help your child grow with the right guidance and care.
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                        <div>
-                            <div className="testimonials-item rounded-3 bg-white">
-                                <div className="position-relative d-inline-flex">
-                                    <div className="avatar rounded-circle avatar-xxl border border-white border-3">
-                                        <Link to={route.studentsDetails}>
+                            <div>
+                                <div className="course-item">
+                                    <div className="course-img">
+                                        <Link to={route.courseDetails2}>
                                             <ImageWithBasePath
-                                                className="img-fluid rounded-circle"
-                                                src="./assets/img/user/user-43.jpg"
+                                                src="assets/img/tutors/tutor1.jpg"
                                                 alt="img"
+                                                className="img-fluid"
                                             />
                                         </Link>
+
                                     </div>
-                                    <i className="isax isax-quote-up5 bg-secondary quote rounded-pill fs-16 p-1" />
-                                </div>
-                                <h6 className="mb-1">
-                                    <Link to={route.studentsDetails}>Adrian Coztanza</Link>
-                                </h6>
-                                <p className="designation">Architect</p>
-                                <p className="mb-3 text-truncate line-clamb-2">
-                                    The advice was useful, but I wish my mentor had been more
-                                    available for follow-up discussions.
-                                </p>
-                                <div>
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
-                                    <i className="fa-solid fa-star text-warning" />
+
+                                    <div className="pb-3 border-bottom mb-3">
+                                        <h5>
+                                            <Link to={route.courseDetails2}>
+                                                English Medium Schools
+                                            </Link>
+                                        </h5>
+                                    </div>
+
+                                     <p className="text-muted">
+                                        Find expert tutors specialized in early childhood education to help your child grow with the right guidance and care.
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                    </Slider>
+                        </Slider>
+
+
+                    </div>
+                    <div className="d-flex align-items-center justify-content-center">
+                        <Link to={route.courseList} className="btn btn-primary btn-md">
+                            View All Tutors
+                        </Link>
+                    </div>
                 </div>
-            </div>
+            </section>
             {/* testimonials */}
         </>
 

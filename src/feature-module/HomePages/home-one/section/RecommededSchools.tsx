@@ -87,7 +87,7 @@ const schools: SchoolCard[] = [
 ];
 
 
-const Benefits: React.FC = () => {
+const RecommededSchools: React.FC = () => {
   return (
     <div className="container py-4">
         <h1>Recommeded Schools</h1>
@@ -100,5 +100,5 @@ const Benefits: React.FC = () => {
   );
 };
 
-export default Benefits;
+export default RecommededSchools;
 

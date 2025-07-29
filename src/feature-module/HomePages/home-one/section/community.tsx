@@ -14,13 +14,11 @@ const Community = () => {
                         <div className="col-lg-6">
                             <div className="section-header">
                                 <span className="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">
-                                    Advanced Learning
+                                    Quality Education for Every Child
                                 </span>
-                                <h2>Creating a community of learners.</h2>
+                                <h2> Quality Education for Every Child</h2>
                                 <p>
-                                    We're dedicated to transforming education by providing a diverse
-                                    range of high-quality courses that cater to learners of all
-                                    levels.
+                                    We're committed to helping parents discover the best learning environment by providing a wide range of schools that cater to every child's needs and potential.
                                 </p>
                             </div>
                             <div className="community-item d-flex align-items-center">
@@ -28,10 +26,9 @@ const Community = () => {
                                     <i className="isax isax-book-saved5" />
                                 </span>
                                 <div>
-                                    <h5 className="mb-2">Learn from anywhere</h5>
+                                    <h5 className="mb-2">Explore Schools Anywhere</h5>
                                     <p className="mb-0">
-                                        Learning from anywhere has become a transform aspect of modern
-                                        education, allowing individuals.
+                                        Find and compare schools across cities or within your neighborhood — all from one platform.
                                     </p>
                                 </div>
                             </div>
@@ -40,10 +37,9 @@ const Community = () => {
                                     <i className="isax isax-bookmark5" />
                                 </span>
                                 <div>
-                                    <h5 className="mb-2">Expert Mentors</h5>
+                                    <h5 className="mb-2">Trusted Educators</h5>
                                     <p className="mb-0">
-                                        Learning from anywhere has become a transform aspect of modern
-                                        education, allowing individuals.
+                                       Browse schools with highly qualified teachers and staff committed to your child’s academic and personal growth.
                                     </p>
                                 </div>
                             </div>
@@ -52,10 +48,9 @@ const Community = () => {
                                     <i className="isax isax-chart-26" />
                                 </span>
                                 <div>
-                                    <h5 className="mb-2">Learn in demand skills</h5>
+                                    <h5 className="mb-2">Focus on Future Skills</h5>
                                     <p className="mb-0">
-                                        In today's rapidly evolving job market, learning in demand
-                                        skills is crucial for career advancement.
+                                      Select institutions that go beyond textbooks — offering life skills, extracurriculars, and digital learning opportunities for holistic development.
                                     </p>
                                 </div>
                             </div>
