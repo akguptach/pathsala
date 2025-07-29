@@ -57,7 +57,7 @@ const Faq = () => {
                       aria-expanded="true"
                       aria-controls="collapsecustomicon1One"
                     >
-                      How do I enroll in a course?{" "}
+                       How do I apply to a school?{" "}
                       <i className="isax isax-add fs-20 fw-semibold ms-1" />
                     </Link>
                   </h2>
@@ -69,9 +69,7 @@ const Faq = () => {
                   >
                     <div className="accordion-body pt-0">
                       <p>
-                        Many websites offer a Certificate of Completion for paid
-                        courses. Free courses may or may not include a
-                        certificate, depending on the platform’s policies.
+                       You can apply by selecting a school, reviewing its details, and submitting the application through our portal or by visiting the school’s official website via the provided link.
                       </p>
                     </div>
                   </div>
@@ -90,7 +88,7 @@ const Faq = () => {
                       aria-expanded="false"
                       aria-controls="collapsecustomicon1One"
                     >
-                      How long do I have access to a course?{" "}
+                      Can I apply to multiple schools at once?{" "}
                       <i className="isax isax-add fs-20 fw-semibold ms-1" />
                     </Link>
                   </h2>
@@ -102,9 +100,7 @@ const Faq = () => {
                   >
                     <div className="accordion-body pt-0">
                       <p>
-                        Many websites offer a Certificate of Completion for paid
-                        courses. Free courses may or may not include a
-                        certificate, depending on the platform’s policies.
+                     Yes, you can shortlist and apply to multiple schools. We recommend applying early to secure admission in your preferred institutions.
                       </p>
                     </div>
                   </div>
@@ -123,7 +119,7 @@ const Faq = () => {
                       aria-expanded="false"
                       aria-controls="collapsecustomicon1One"
                     >
-                      What payment methods are accepted?{" "}
+                      What types of schools are listed here?{" "}
                       <i className="isax isax-add fs-20 fw-semibold ms-1" />
                     </Link>
                   </h2>
@@ -135,9 +131,7 @@ const Faq = () => {
                   >
                     <div className="accordion-body pt-0">
                       <p>
-                        Many websites offer a Certificate of Completion for paid
-                        courses. Free courses may or may not include a
-                        certificate, depending on the platform’s policies.
+                       We list Private, Government, International, CBSE, ICSE, and Play Schools across various cities.
                       </p>
                     </div>
                   </div>
@@ -156,7 +150,7 @@ const Faq = () => {
                       aria-expanded="false"
                       aria-controls="collapsecustomicon1One"
                     >
-                      Will I receive a certificate after completing a course?{" "}
+                      Is there a fee to use the platform?{" "}
                       <i className="isax isax-add fs-20 fw-semibold ms-1" />
                     </Link>
                   </h2>
@@ -168,9 +162,7 @@ const Faq = () => {
                   >
                     <div className="accordion-body pt-0">
                       <p>
-                        Many websites offer a Certificate of Completion for paid
-                        courses. Free courses may or may not include a
-                        certificate, depending on the platform’s policies.
+                       No, our platform is free for parents and guardians to explore and apply to schools.
                       </p>
                     </div>
                   </div>
@@ -189,7 +181,7 @@ const Faq = () => {
                       aria-expanded="false"
                       aria-controls="collapsecustomicon1One"
                     >
-                      What is the purpose of this DreamLMS ?{" "}
+                      Will I get confirmation from the school?{" "}
                       <i className="isax isax-add fs-20 fw-semibold ms-1" />
                     </Link>
                   </h2>
@@ -201,9 +193,7 @@ const Faq = () => {
                   >
                     <div className="accordion-body pt-0">
                       <p>
-                        Many websites offer a Certificate of Completion for paid
-                        courses. Free courses may or may not include a
-                        certificate, depending on the platform’s policies.
+                    Yes, once your application is submitted, the school will contact you directly through the details you provided.
                       </p>
                     </div>
                   </div>
@@ -222,7 +212,7 @@ const Faq = () => {
                       aria-expanded="false"
                       aria-controls="collapsecustomicon1One"
                     >
-                      What can I do with my certificate?{" "}
+                      How do I know if admissions are open?{" "}
                       <i className="isax isax-add fs-20 fw-semibold ms-1" />
                     </Link>
                   </h2>
@@ -234,9 +224,7 @@ const Faq = () => {
                   >
                     <div className="accordion-body pt-0">
                       <p>
-                        Many websites offer a Certificate of Completion for paid
-                        courses. Free courses may or may not include a
-                        certificate, depending on the platform’s policies.
+                      Schools with “Admissions Open” badges indicate that they’re currently accepting applications for the upcoming academic year.
                       </p>
                     </div>
                   </div>

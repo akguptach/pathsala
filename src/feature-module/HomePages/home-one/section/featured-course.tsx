@@ -14,7 +14,7 @@ const Featuredcourse = () => {
         dots: false,
         infinite: true,
         speed: 300,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
           {
@@ -48,12 +48,11 @@ const Featuredcourse = () => {
                 <div className="container">
                     <div className="section-header text-center">
                         <span className="fw-medium text-secondary text-decoration-underline mb-2 d-inline-block">
-                            Featured Courses
+                            Featured Schools
                         </span>
-                        <h2>What’s New in DreamsLMS</h2>
+                        <h2>Find the perfect school for your child.</h2>
                         <p>
-                            Discover our featured courses, specially curated to help you gain
-                            in-demand skills
+                           PatashalaKart connects you with the right school and everything you need to know about it.
                         </p>
                     </div>
                     <div className='feature-course-slider-22 top-courses-slider'>
@@ -64,52 +63,21 @@ const Featuredcourse = () => {
                                         <div className="course-img">
                                             <Link to={route.courseDetails}>
                                                 <ImageWithBasePath
-                                                    src="assets/img/course/course-36.jpg"
+                                                    src="assets/img/course/NurserySchool.jpg"
                                                     alt="img"
                                                     className="img-fluid"
                                                 />
-                                            </Link>
-                                            <div className="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-2">
-                                                <span className="price-badge ms-auto">$500</span>
-                                            </div>
-                                        </div>
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <span className="badge badge-md badge-soft-info rounded-pill">
-                                                UI/UX
-                                            </span>
-                                            <Link to="#" className="fav-icon">
-                                                <i className="isax isax-heart" />
                                             </Link>
                                         </div>
                                         <div className="pb-3 border-bottom mb-3">
                                             <h5>
                                                 <Link to={route.courseDetails}>
-                                                    Information About UI/UX Design Degree
+                                                    Nursery Schools
                                                 </Link>
                                             </h5>
                                         </div>
-                                        <div className="d-flex align-items-center justify-content-between mb-4">
-                                            <div className="course-rating">
-                                                <span className="course-user">
-                                                    <Link to="#">
-                                                        <ImageWithBasePath
-                                                            src="assets/img/user/user-06.jpg"
-                                                            alt="img"
-                                                            className="img-fluid"
-                                                        />
-                                                    </Link>
-                                                </span>
-                                                <Link to="#">Brenda Slaton</Link>
-                                            </div>
-                                            <div className="d-flex">
-                                                <span className="d-flex align-items-center rating">
-                                                    <i className="fa-solid fa-star text-warning me-2" />
-                                                    5.0
-                                                </span>
-                                            </div>
-                                        </div>
                                         <Link to={route.courseDetails} className="btn buy-course-btn">
-                                            Buy Course Now
+                                            Explore Nursery Schools
                                         </Link>
                                     </div>
                                 </div>
@@ -118,52 +86,23 @@ const Featuredcourse = () => {
                                         <div className="course-img">
                                             <Link to={route.courseDetails}>
                                                 <ImageWithBasePath
-                                                    src="assets/img/course/course-37.jpg"
+                                                    src="assets/img/schools/DayBoardingSchool.jpg"
                                                     alt="img"
                                                     className="img-fluid"
                                                 />
                                             </Link>
-                                            <div className="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-2">
-                                                <span className="price-badge ms-auto">$300</span>
-                                            </div>
                                         </div>
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <span className="badge badge-soft-danger badge-md rounded-pill shadow-none">
-                                                Productivity
-                                            </span>
-                                            <Link to="#" className="fav-icon">
-                                                <i className="isax isax-heart" />
-                                            </Link>
-                                        </div>
+                                        
                                         <div className="pb-3 border-bottom mb-3">
                                             <h5>
                                                 <Link to={route.courseDetails}>
-                                                    Learn &amp; Create ReactJS Tech Fundamentals Apps
+                                                    Day Borading Schools
                                                 </Link>
                                             </h5>
                                         </div>
-                                        <div className="d-flex align-items-center justify-content-between mb-4">
-                                            <div className="course-rating">
-                                                <span className="course-user">
-                                                    <Link to="#">
-                                                        <ImageWithBasePath
-                                                            src="assets/img/user/user-07.jpg"
-                                                            alt="img"
-                                                            className="img-fluid"
-                                                        />
-                                                    </Link>
-                                                </span>
-                                                <Link to="#">David Benitez</Link>
-                                            </div>
-                                            <div className="d-flex">
-                                                <span className="d-flex align-items-center rating">
-                                                    <i className="fa-solid fa-star text-warning me-2" />
-                                                    5.0
-                                                </span>
-                                            </div>
-                                        </div>
+                                       
                                         <Link to={route.courseDetails} className="btn buy-course-btn">
-                                            Buy Course Now
+                                           Explore Day Borading Schools
                                         </Link>
                                     </div>
                                 </div>
@@ -172,52 +111,23 @@ const Featuredcourse = () => {
                                         <div className="course-img">
                                             <Link to={route.courseDetails}>
                                                 <ImageWithBasePath
-                                                    src="assets/img/course/course-38.jpg"
+                                                    src="assets/img/schools/BoardingSchools.jpg"
                                                     alt="img"
                                                     className="img-fluid"
                                                 />
                                             </Link>
-                                            <div className="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-2">
-                                                <span className="price-badge ms-auto">$350</span>
-                                            </div>
+                                           
                                         </div>
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <span className="badge badge-soft-purple badge-md rounded-pill shadow-none">
-                                                Management
-                                            </span>
-                                            <Link to="#" className="fav-icon">
-                                                <i className="isax isax-heart" />
-                                            </Link>
-                                        </div>
+                                    
                                         <div className="pb-3 border-bottom mb-3">
                                             <h5>
                                                 <Link to={route.courseDetails}>
-                                                    The Complete Business and Management Course
+                                                    Boarding Schools
                                                 </Link>
                                             </h5>
                                         </div>
-                                        <div className="d-flex align-items-center justify-content-between mb-4">
-                                            <div className="course-rating">
-                                                <span className="course-user">
-                                                    <Link to="#">
-                                                        <ImageWithBasePath
-                                                            src="assets/img/user/user-08.jpg"
-                                                            alt="img"
-                                                            className="img-fluid"
-                                                        />
-                                                    </Link>
-                                                </span>
-                                                <Link to="#">Calvin Johnsen</Link>
-                                            </div>
-                                            <div className="d-flex">
-                                                <span className="d-flex align-items-center rating">
-                                                    <i className="fa-solid fa-star text-warning me-2" />
-                                                    5.0
-                                                </span>
-                                            </div>
-                                        </div>
                                         <Link to={route.courseDetails} className="btn buy-course-btn">
-                                            Buy Course Now
+                                            Explore Bording Schools
                                         </Link>
                                     </div>
                                 </div>
@@ -226,52 +136,21 @@ const Featuredcourse = () => {
                                         <div className="course-img">
                                             <Link to={route.courseDetails}>
                                                 <ImageWithBasePath
-                                                    src="assets/img/course/course-39.jpg"
+                                                    src="assets/img/schools/DaySchools.jpg"
                                                     alt="img"
                                                     className="img-fluid"
                                                 />
-                                            </Link>
-                                            <div className="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-2">
-                                                <span className="price-badge ms-auto">$500</span>
-                                            </div>
-                                        </div>
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <span className="badge badge-soft-success badge-md rounded-pill shadow-none">
-                                                Art &amp; Media
-                                            </span>
-                                            <Link to="#" className="fav-icon">
-                                                <i className="isax isax-heart5 text-danger" />
                                             </Link>
                                         </div>
                                         <div className="pb-3 border-bottom mb-3">
                                             <h5>
                                                 <Link to={route.courseDetails}>
-                                                    Build Creative Arts &amp; media Course Completed
+                                                    Day Schools
                                                 </Link>
                                             </h5>
                                         </div>
-                                        <div className="d-flex align-items-center justify-content-between mb-4">
-                                            <div className="course-rating">
-                                                <span className="course-user">
-                                                    <Link to="#">
-                                                        <ImageWithBasePath
-                                                            src="assets/img/user/user-09.jpg"
-                                                            alt="img"
-                                                            className="img-fluid"
-                                                        />
-                                                    </Link>
-                                                </span>
-                                                <Link to="#">David Benitez</Link>
-                                            </div>
-                                            <div className="d-flex">
-                                                <span className="d-flex align-items-center rating">
-                                                    <i className="fa-solid fa-star text-warning me-2" />
-                                                    5.0
-                                                </span>
-                                            </div>
-                                        </div>
                                         <Link to={route.courseDetails} className="btn buy-course-btn">
-                                            Buy Course Now
+                                            Explore Day Schools
                                         </Link>
                                     </div>
                                 </div>
@@ -280,52 +159,24 @@ const Featuredcourse = () => {
                                         <div className="course-img">
                                             <Link to={route.courseDetails2}>
                                                 <ImageWithBasePath
-                                                    src="assets/img/course/course-37.jpg"
+                                                    src="assets/img/schools/EnglishMedium0.jpg"
                                                     alt="img"
                                                     className="img-fluid"
                                                 />
                                             </Link>
-                                            <div className="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-2">
-                                                <span className="price-badge ms-auto">$300</span>
-                                            </div>
+                                           
                                         </div>
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <span className="badge badge-soft-danger badge-md rounded-pill shadow-none">
-                                                Productivity
-                                            </span>
-                                            <Link to="#" className="fav-icon">
-                                                <i className="isax isax-heart" />
-                                            </Link>
-                                        </div>
+                                        
                                         <div className="pb-3 border-bottom mb-3">
                                             <h5>
                                                 <Link to={route.courseDetails2}>
-                                                    Learn &amp; Create ReactJS Tech Fundamentals Apps
+                                                    English Medium Schools
                                                 </Link>
                                             </h5>
                                         </div>
-                                        <div className="d-flex align-items-center justify-content-between mb-4">
-                                            <div className="course-rating">
-                                                <span className="course-user">
-                                                    <Link to="#">
-                                                        <ImageWithBasePath
-                                                            src="assets/img/user/user-07.jpg"
-                                                            alt="img"
-                                                            className="img-fluid"
-                                                        />
-                                                    </Link>
-                                                </span>
-                                                <Link to="#">David Benitez</Link>
-                                            </div>
-                                            <div className="d-flex">
-                                                <span className="d-flex align-items-center rating">
-                                                    <i className="fa-solid fa-star text-warning me-2" />
-                                                    5.0
-                                                </span>
-                                            </div>
-                                        </div>
+                                      
                                         <Link to={route.courseDetails} className="btn buy-course-btn">
-                                            Buy Course Now
+                                            Explore English Medium Schools
                                         </Link>
                                     </div>
                                 </div>
@@ -335,7 +186,7 @@ const Featuredcourse = () => {
                     </div>
                     <div className="d-flex align-items-center justify-content-center">
                         <Link to={route.courseList} className="btn btn-primary btn-md">
-                            View All Courses
+                            View All Schools
                         </Link>
                     </div>
                 </div>
