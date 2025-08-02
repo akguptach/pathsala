@@ -17,7 +17,7 @@ const CourseDetails = () => {
 
     return (
         <>
-            <Breadcrumb title='Course Detail' />
+            <Breadcrumb title='School Detail' />
 
             <>
                 {/* Course detail */}
@@ -52,65 +52,39 @@ const CourseDetails = () => {
                                             </div>
                                         </div>
                                         <div className="w-100 ps-lg-4">
-                                            <h3 className="mb-2">The Complete Web Developer Course 2.0</h3>
+                                            <h3 className="mb-2">Pallavi Aware School</h3>
                                             <p className="fs-14 mb-3">
-                                                Learn Web Development by building 25 websites and mobile apps
-                                                using HTML, CSS, Javascript, PHP, Python
+                                                16-1-11/1/A, Survey No. 37 & 40, Bairamalguda, Saroornagar Mandal, Telangana - 500035
                                             </p>
                                             <div className="d-flex align-items-center gap-2 gap-sm-3 gap-xl-4 flex-wrap my-3 my-sm-0">
                                                 <p className="fw-medium d-flex align-items-center mb-0">
-                                                    <ImageWithBasePath
-                                                        className="me-2"
-                                                        src="./assets/img/icons/book.svg"
-                                                        alt="img"
-                                                    />
-                                                    12+ Lesson
+                                                    <i className="fa-solid fa-star text-warning me-2" /> 4.9
+
                                                 </p>
                                                 <p className="fw-medium d-flex align-items-center mb-0">
-                                                    <ImageWithBasePath
-                                                        className="me-2"
-                                                        src="./assets/img/icons/timer-start.svg"
-                                                        alt="img"
-                                                    />
-                                                    9hr 30min
+                                                    <span className="badge badge-sm rounded-pill bg-warning fs-12">
+                                                        Compare
+                                                    </span>
                                                 </p>
                                                 <p className="fw-medium d-flex align-items-center mb-0">
-                                                    <ImageWithBasePath
-                                                        className="me-2"
-                                                        src="./assets/img/icons/people.svg"
-                                                        alt="img"
-                                                    />
-                                                    32 students enrolled
+                                                    <span className="badge badge-sm rounded-pill bg-warning fs-12">
+                                                        Request Callback
+                                                    </span>
                                                 </p>
                                                 <span className="badge badge-sm rounded-pill bg-warning fs-12">
-                                                    Web Development
+                                                    Notify me
                                                 </span>
                                             </div>
                                             <div className="d-sm-flex align-items-center justify-content-sm-between mt-3">
                                                 <div className="d-flex align-items-center">
-                                                    <div className="avatar avatar-lg">
-                                                        <ImageWithBasePath
-                                                            className="rounded-circle"
-                                                            src="./assets/img/avatar/avatar10.jpg"
-                                                            alt="img"
-                                                        />
-                                                    </div>
                                                     <div className="ms-2">
                                                         <h5 className="fs-18 fw-semibold">
-                                                            <Link to={route.instructorDetails}>Nicole Brown</Link>
+                                                            <Link to={route.instructorDetails}>Views</Link>
                                                         </h5>
-                                                        <p className="fs-14">Instructor</p>
                                                     </div>
                                                 </div>
                                                 <div className="d-flex mt-sm-0 mt-2 align-items-center">
-                                                    <i className="fa-solid fa-star text-warning me-1" />
-                                                    <i className="fa-solid fa-star text-warning me-1" />
-                                                    <i className="fa-solid fa-star text-warning me-1" />
-                                                    <i className="fa-solid fa-star text-warning me-1" />
-                                                    <i className="fa-solid fa-star text-gray-1 me-1" />
-                                                    <p className=" fs-14">
-                                                        <span className="text-gray-9">4.0</span> (15){" "}
-                                                    </p>
+                                                    <button>Admission Enquery</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -762,10 +736,10 @@ const CourseDetails = () => {
                             </div>
                             <div className="col-lg-4">
                                 <div className="course-sidebar-sec mt-0">
-                                    <div className="card mb-4">
+                                    {/* <div className="card mb-4">
                                         <div className="card-body">
                                             <div className="d-flex justify-content-between align-items-center mb-4">
-                                                <h2 className="text-success fs-30">FREE</h2>
+                                                <h2 className="text-success fs-30">Overview</h2>
                                                 <p className="fs-14 mb-0">
                                                     <span className="text-decoration-line-through me-2">
                                                         $99.00
@@ -774,18 +748,22 @@ const CourseDetails = () => {
                                                 </p>
                                             </div>
                                             <div className="d-flex justify-content-between gap-3 wishlist-btns">
-                                                <Link
-                                                    className="btn d-flex btn-wish"
-                                                    to={route.studentWishlist}
-                                                >
-                                                    <i className="isax isax-heart me-1 fs-18" />
-                                                    Add to Wishlist
-                                                </Link>
-                                                <Link className="btn d-flex btn-wish" to="#">
-                                                    <i className="ti ti-share me-1 fs-18" />
-                                                    Share
-                                                </Link>
+                                                <div className="text-center">
+                                                    <span className="d-block mb-1">Wishlist</span>
+                                                    <Link className="btn d-flex btn-wish" to={route.studentWishlist}>
+                                                        <i className="isax isax-heart me-1 fs-18" />
+                                                        Add to Wishlist
+                                                    </Link>
+                                                </div>
+                                                <div className="text-center">
+                                                    <span className="d-block mb-1">Share</span>
+                                                    <Link className="btn d-flex btn-wish" to="#">
+                                                        <i className="ti ti-share me-1 fs-18" />
+                                                        Share
+                                                    </Link>
+                                                </div>
                                             </div>
+
                                             <Link
                                                 to={route.courseCart}
                                                 className="btn btn-primary w-100 mt-3 btn-enroll"
@@ -793,7 +771,42 @@ const CourseDetails = () => {
                                                 Enroll Now
                                             </Link>
                                         </div>
+                                    </div> */}
+                                    <div className="card mb-4">
+                                        <div className="card-body">
+                                            <div className="d-flex justify-content-between align-items-center mb-4">
+                                                <h2 className="text-success fs-30">Overview</h2>
+                                                <p className="fs-14 mb-0">
+                                                    <span className="text-decoration-line-through me-2">$99.00</span>
+                                                    50% off
+                                                </p>
+                                            </div>
+
+                                            <div className="row g-3 wishlist-btns">
+                                                 <div className="col-6 text-center">
+                                                    <span className="d-block mb-1">OwnerShip</span>
+                                                    <input type="text" className="form-control" placeholder="Input 3" />
+                                                </div>
+                                                  <div className="col-6 text-center">
+                                                    <span className="d-block mb-1">Board</span>
+                                                    <input type="text" className="form-control" placeholder="Input 3" />
+                                                </div>
+                                                <div className="col-6 text-center">
+                                                    <span className="d-block mb-1">Category</span>
+                                                    <input type="text" className="form-control" placeholder="Input 3" />
+                                                </div>
+                                                <div className="col-6 text-center">
+                                                    <span className="d-block mb-1">Medium</span>
+                                                    <input type="text" className="form-control" placeholder="Input 4" />
+                                                </div>
+                                            </div>
+
+                                            <Link to={route.courseCart} className="btn btn-primary w-100 mt-3 btn-enroll">
+                                                Enroll Now
+                                            </Link>
+                                        </div>
                                     </div>
+
                                     <div className="card mb-4">
                                         <div className="card-body">
                                             <h5 className="subs-title mb-4">Includes</h5>

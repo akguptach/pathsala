@@ -10,16 +10,16 @@ const CourseList = () => {
 
   const [selectedItems, setSelectedItems] = useState(Array(10).fill(false));
   const handleItemClick = (index: number) => {
-      setSelectedItems((prevSelectedItems) => {
-          const updatedSelectedItems = [...prevSelectedItems];
-          updatedSelectedItems[index] = !updatedSelectedItems[index];
-          return updatedSelectedItems;
-      });
+    setSelectedItems((prevSelectedItems) => {
+      const updatedSelectedItems = [...prevSelectedItems];
+      updatedSelectedItems[index] = !updatedSelectedItems[index];
+      return updatedSelectedItems;
+    });
   };
 
   const route = all_routes;
 
-  const formatter: NonNullable<SliderSingleProps['tooltip']>['formatter'] = (value) => `$${value}`;
+  const formatter: NonNullable<SliderSingleProps['tooltip']>['formatter'] = (value) => `${value} kms`;
   return (
     <>
       <Breadcrumb title='Course List' />
@@ -50,7 +50,7 @@ const CourseList = () => {
                           aria-expanded="false"
                           aria-controls="collapsecustomicon1One"
                         >
-                          Categories <i className="fa-solid fa-chevron-down" />
+                          Filter by Board <i className="fa-solid fa-chevron-down" />
                         </Link>
                       </h2>
                       <div
@@ -64,25 +64,25 @@ const CourseList = () => {
                           <div>
                             <label className="custom_check">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> Backend (3)
+                              <span className="checkmark" /> CISCE
                             </label>
                           </div>
                           <div>
                             <label className="custom_check">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> CSS (2)
+                              <span className="checkmark" /> CBSC
                             </label>
                           </div>
                           <div>
                             <label className="custom_check">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> Frontend (2)
+                              <span className="checkmark" /> BSEAP
                             </label>
                           </div>
                           <div>
                             <label className="custom_check">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> General (2)
+                              <span className="checkmark" /> DBSC
                             </label>
                           </div>
                           <div>
@@ -92,25 +92,25 @@ const CourseList = () => {
                                 name="select_specialist"
                                 defaultChecked
                               />
-                              <span className="checkmark" /> IT &amp; Software (2)
+                              <span className="checkmark" /> GSEB
                             </label>
                           </div>
                           <div>
                             <label className="custom_check">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> Photography (2)
+                              <span className="checkmark" /> BSEH
                             </label>
                           </div>
                           <div>
                             <label className="custom_check">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> Programming Language (3)
+                              <span className="checkmark" /> JAC
                             </label>
                           </div>
                           <div>
                             <label className="custom_check mb-0">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> Technology (2)
+                              <span className="checkmark" /> MSBHSE
                             </label>
                           </div>
                           <Link to="#" className="see-more-btn">
@@ -129,7 +129,7 @@ const CourseList = () => {
                           aria-expanded="false"
                           aria-controls="collapsecustomicon1Two"
                         >
-                          Instructors
+                          Filter by Medium
                           <i className="fa-solid fa-chevron-down" />
                         </Link>
                       </h2>
@@ -143,19 +143,19 @@ const CourseList = () => {
                           <div>
                             <label className="custom_check">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> Keny White (10)
+                              <span className="checkmark" /> Telugu
                             </label>
                           </div>
                           <div>
                             <label className="custom_check">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> Hinata Hyuga (5)
+                              <span className="checkmark" /> Hindi
                             </label>
                           </div>
                           <div>
                             <label className="custom_check">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> John Doe (3)
+                              <span className="checkmark" /> English
                             </label>
                           </div>
                           <div>
@@ -165,7 +165,7 @@ const CourseList = () => {
                                 name="select_specialist"
                                 defaultChecked
                               />
-                              <span className="checkmark" /> Nicole Brown
+                              <span className="checkmark" /> Bengali
                             </label>
                           </div>
                           <Link to="#" className="see-more-btn">
@@ -184,7 +184,7 @@ const CourseList = () => {
                           aria-expanded="false"
                           aria-controls="collapsecustomicon1Three"
                         >
-                          Price
+                          Filter by Category
                           <i className="fa-solid fa-chevron-down" />
                         </Link>
                       </h2>
@@ -198,19 +198,19 @@ const CourseList = () => {
                           <div>
                             <label className="custom_check custom_one">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> All (10)
+                              <span className="checkmark" /> Co-ed
                             </label>
                           </div>
                           <div>
                             <label className="custom_check custom_one">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> Free (5)
+                              <span className="checkmark" /> boys
                             </label>
                           </div>
                           <div>
                             <label className="custom_check custom_one mb-0">
                               <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> Paid (3)
+                              <span className="checkmark" /> girls
                             </label>
                           </div>
                         </div>
@@ -238,136 +238,7 @@ const CourseList = () => {
                       >
                         <div className="accordion-body">
                           <div className="filter-range">
-                            <Slider range tooltip={{ formatter }} min={50} max={5695} defaultValue={[50, 2000]} />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="headingcustomicon1Five">
-                        <Link
-                          to="#"
-                          className="accordion-button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapsecustomicon1Five"
-                          aria-expanded="false"
-                          aria-controls="collapsecustomicon1Five"
-                        >
-                          Level
-                          <i className="fa-solid fa-chevron-down" />
-                        </Link>
-                      </h2>
-                      <div
-                        id="collapsecustomicon1Five"
-                        className="accordion-collapse collapse show"
-                        aria-labelledby="headingcustomicon1Five"
-                        data-bs-parent="#accordioncustomicon1Example"
-                      >
-                        <div className="accordion-body">
-                          <div>
-                            <label className="custom_check custom_one">
-                              <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" />
-                              Beginner (10)
-                            </label>
-                          </div>
-                          <div>
-                            <label className="custom_check custom_one">
-                              <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" /> Intermediate (5)
-                            </label>
-                          </div>
-                          <div>
-                            <label className="custom_check custom_one">
-                              <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" />
-                              Advanced (21)
-                            </label>
-                          </div>
-                          <div>
-                            <label className="custom_check custom_one mb-0">
-                              <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" />
-                              Expert (3)
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="headingcustomicon1Six">
-                        <Link
-                          to="#"
-                          className="accordion-button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapsecustomicon1Six"
-                          aria-expanded="false"
-                          aria-controls="collapsecustomicon1Six"
-                        >
-                          Reviews <i className="fa-solid fa-chevron-down" />
-                        </Link>
-                      </h2>
-                      <div
-                        id="collapsecustomicon1Six"
-                        className="accordion-collapse collapse show"
-                        aria-labelledby="headingcustomicon1Six"
-                        data-bs-parent="#accordioncustomicon1Example"
-                      >
-                        <div className="accordion-body">
-                          <div>
-                            <label className="custom_check custom_one">
-                              <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-warning" />
-                            </label>
-                          </div>
-                          <div>
-                            <label className="custom_check custom_one">
-                              <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-light" />
-                            </label>
-                          </div>
-                          <div>
-                            <label className="custom_check custom_one">
-                              <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-light me-1" />
-                              <i className="fa-solid fa-star text-light" />
-                            </label>
-                          </div>
-                          <div>
-                            <label className="custom_check custom_one">
-                              <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-light me-1" />
-                              <i className="fa-solid fa-star text-light me-1" />
-                              <i className="fa-solid fa-star text-light" />
-                            </label>
-                          </div>
-                          <div>
-                            <label className="custom_check custom_one mb-0">
-                              <input type="checkbox" name="select_specialist" />
-                              <span className="checkmark" />
-                              <i className="fa-solid fa-star text-warning me-1" />
-                              <i className="fa-solid fa-star text-light me-1" />
-                              <i className="fa-solid fa-star text-light me-1" />
-                              <i className="fa-solid fa-star text-light me-1" />
-                              <i className="fa-solid fa-star text-light" />
-                            </label>
+                            <Slider range tooltip={{ formatter }} min={0} max={100} defaultValue={[0, 20]} />
                           </div>
                         </div>
                       </div>
@@ -389,20 +260,20 @@ const CourseList = () => {
                         <form action="#">
                           <div className="d-sm-flex justify-content-center justify-content-lg-end mb-1 mb-lg-0">
                             <div className="view-icons mb-2 mb-sm-0">
-                              <Link to={route.courseGrid} className="grid-view">
+                              {/* <Link to={route.courseGrid} className="grid-view">
                                 <i className="feather-grid" />
-                              
-                              </Link>
+
+                              </Link> */}
                               <Link to={route.courseList} className="list-view active">
                                 <i className="isax isax-task" />
                               </Link>
                             </div>
-                            <select className="form-select">
+                            {/* <select className="form-select">
                               <option>Newly Published </option>
                               <option>Trending Courses</option>
                               <option>Top Rated</option>
                               <option>Free Courses</option>
-                            </select>
+                            </select> */}
                             <div className=" search-group">
                               <i className="isax isax-search-normal-1" />
                               <input
@@ -431,7 +302,7 @@ const CourseList = () => {
                             />
                           </Link>
                           <div className="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-2" key={1} onClick={() => handleItemClick(1)}>
-                            <Link to="#" className={`like ${selectedItems[1]? 'selected':''}`}>
+                            <Link to="#" className={`like ${selectedItems[1] ? 'selected' : ''}`}>
                               <i className="isax isax-heart" />
                             </Link>
                           </div>
@@ -448,36 +319,34 @@ const CourseList = () => {
                                   />
                                 </Link>
                               </div>
-                              <p className="ms-2">
-                                <Link to={route.instructorDetails}>David Benitez</Link>
-                              </p>
+                              <h6 className="ms-2">
+                                <Link to={route.instructorDetails}>Pallavi Aware International</Link>
+                              </h6>
                             </div>
                             <span>
                               <Link className="tag-btn" to="#">
-                                Design
+                                Board
                               </Link>
                             </span>
                           </div>
-                          <h4 className="mt-3 mb-2">
+                          <p className="mt-3 mb-2">
                             <Link to={route.courseDetails}>
-                              Information About UI/UX Design Degree
+                              Beside Aware Global Hospitals, Bairamalguda, Saroornagar
                             </Link>
-                          </h4>
+                          </p>
                           <div className="d-flex align-items-center">
                             <p className="d-flex align-items-center mb-0">
                               <i className="fa-solid fa-star text-warning me-2" /> 4.9
-                              (200 Reviews)
                             </p>
-                            <span className="dot" />
-                            <p>Intermediate</p>
+
                           </div>
                           <div className="d-flex justify-content-between mt-3 align-items-center">
-                            <h5 className="text-secondary">$120</h5>
+                            <h5 className="text-secondary">0.8kms</h5>
                             <Link
                               to={route.courseDetails}
                               className="btn btn-dark btn-sm d-inline-flex align-items-center"
                             >
-                              Get Course
+                              explore school
                               <i className="fs-8 fas fa-angle-right ms-2" />
                             </Link>
                           </div>
@@ -497,7 +366,7 @@ const CourseList = () => {
                             />
                           </Link>
                           <div className="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-2" key={2} onClick={() => handleItemClick(1)}>
-                            <Link to="#" className={`like ${selectedItems[2]? 'selected':''}`}>
+                            <Link to="#" className={`like ${selectedItems[2] ? 'selected' : ''}`}>
                               <i className="isax isax-heart" />
                             </Link>
                           </div>
@@ -509,41 +378,39 @@ const CourseList = () => {
                                 <Link to="#">
                                   <ImageWithBasePath
                                     className="img-fluid rounded-circle"
-                                    src="./assets/img/avatar/avatar2.jpg"
+                                    src="./assets/img/avatar/avatar1.jpg"
                                     alt="img"
                                   />
                                 </Link>
                               </div>
-                              <p className="ms-2">
-                                <Link to={route.instructorDetails}>Ana Reyes</Link>
-                              </p>
+                              <h6 className="ms-2">
+                                <Link to={route.instructorDetails}>Mega City Grammar High School</Link>
+                              </h6>
                             </div>
                             <span>
-                              <Link to="#" className="tag-btn">
-                                Wordpress
+                              <Link className="tag-btn" to="#">
+                                Board
                               </Link>
                             </span>
                           </div>
-                          <h4 className="mt-3 mb-2">
+                          <p className="mt-3 mb-2">
                             <Link to={route.courseDetails}>
-                              Wordpress for Beginners - Master Wordpress Quickly
+                              Plot No 77/A, Gayathri Nagar X Roads, Karmanghat
                             </Link>
-                          </h4>
+                          </p>
                           <div className="d-flex align-items-center">
                             <p className="d-flex align-items-center mb-0">
-                              <i className="fa-solid fa-star text-warning me-2" />
-                              4.4 (160 Reviews)
+                              <i className="fa-solid fa-star text-warning me-2" /> 3.8
                             </p>
-                            <span className="dot" />
-                            <p>Advanced</p>
+
                           </div>
                           <div className="d-flex justify-content-between mt-3 align-items-center">
-                            <h5 className="text-secondary">$140</h5>
+                            <h5 className="text-secondary">0.6kms</h5>
                             <Link
                               to={route.courseDetails}
                               className="btn btn-dark btn-sm d-inline-flex align-items-center"
                             >
-                              Get Course
+                              explore school
                               <i className="fs-8 fas fa-angle-right ms-2" />
                             </Link>
                           </div>
@@ -563,7 +430,7 @@ const CourseList = () => {
                             />
                           </Link>
                           <div className="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-2" key={3} onClick={() => handleItemClick(1)}>
-                            <Link to="#" className={`like ${selectedItems[3]? 'selected':''}`}>
+                            <Link to="#" className={`like ${selectedItems[3] ? 'selected' : ''}`}>
                               <i className="isax isax-heart" />
                             </Link>
                           </div>
@@ -575,41 +442,39 @@ const CourseList = () => {
                                 <Link to="#">
                                   <ImageWithBasePath
                                     className="img-fluid rounded-circle"
-                                    src="./assets/img/avatar/avatar3.jpg"
+                                    src="./assets/img/avatar/avatar1.jpg"
                                     alt="img"
                                   />
                                 </Link>
                               </div>
-                              <p className="ms-2">
-                                <Link to={route.instructorDetails}>Andrew Pirtle</Link>
-                              </p>
+                              <h6 className="ms-2">
+                                <Link to={route.instructorDetails}>Expert Model High School</Link>
+                              </h6>
                             </div>
                             <span>
-                              <Link to="#" className="tag-btn">
-                                Design
+                              <Link className="tag-btn" to="#">
+                                Board
                               </Link>
                             </span>
                           </div>
-                          <h4 className="mt-3 mb-2">
+                          <p className="mt-3 mb-2">
                             <Link to={route.courseDetails}>
-                              Sketch from A to Z (2024): Become an app designer
+                              S V Colony, Karmanghat
                             </Link>
-                          </h4>
+                          </p>
                           <div className="d-flex align-items-center">
                             <p className="d-flex align-items-center mb-0">
-                              <i className="fa-solid fa-star text-warning me-2" />
-                              4.6 (170 Reviews)
+                              <i className="fa-solid fa-star text-warning me-2" /> 3.9
                             </p>
-                            <span className="dot" />
-                            <p>Basic</p>
+
                           </div>
                           <div className="d-flex justify-content-between mt-3 align-items-center">
-                            <h5 className="text-secondary">$160</h5>
+                            <h5 className="text-secondary">0.78kms</h5>
                             <Link
                               to={route.courseDetails}
                               className="btn btn-dark btn-sm d-inline-flex align-items-center"
                             >
-                              Get Course
+                              explore school
                               <i className="fs-8 fas fa-angle-right ms-2" />
                             </Link>
                           </div>
@@ -629,7 +494,7 @@ const CourseList = () => {
                             />
                           </Link>
                           <div className="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-2" key={4} onClick={() => handleItemClick(1)}>
-                            <Link to="#" className={`like ${selectedItems[4]? 'selected':''}`}>
+                            <Link to="#" className={`like ${selectedItems[4] ? 'selected' : ''}`}>
                               <i className="isax isax-heart" />
                             </Link>
                           </div>
@@ -641,41 +506,39 @@ const CourseList = () => {
                                 <Link to="#">
                                   <ImageWithBasePath
                                     className="img-fluid rounded-circle"
-                                    src="./assets/img/avatar/avatar4.jpg"
+                                    src="./assets/img/avatar/avatar1.jpg"
                                     alt="img"
                                   />
                                 </Link>
                               </div>
-                              <p className="ms-2">
-                                <Link to={route.instructorDetails}>Christy Garner</Link>
-                              </p>
+                              <h6 className="ms-2">
+                                <Link to={route.instructorDetails}>KVR Pragathi Grammar High School</Link>
+                              </h6>
                             </div>
                             <span>
-                              <Link to="#" className="tag-btn">
-                                Programming
+                              <Link className="tag-btn" to="#">
+                                Board
                               </Link>
                             </span>
                           </div>
-                          <h4 className="mt-3 mb-2">
+                          <p className="mt-3 mb-2">
                             <Link to={route.courseDetails}>
-                              Build Responsive Real World Websites with Crash Course
+                              Jillelaguda, Ambedkar Nagar, Hyderabad
                             </Link>
-                          </h4>
+                          </p>
                           <div className="d-flex align-items-center">
                             <p className="d-flex align-items-center mb-0">
-                              <i className="fa-solid fa-star text-warning me-2" />
-                              4.2 (220 Reviews)
+                              <i className="fa-solid fa-star text-warning me-2" /> 3.9
                             </p>
-                            <span className="dot" />
-                            <p>Advanced</p>
+
                           </div>
                           <div className="d-flex justify-content-between mt-3 align-items-center">
-                            <h5 className="text-secondary">$200</h5>
+                            <h5 className="text-secondary">0.93kms</h5>
                             <Link
                               to={route.courseDetails}
                               className="btn btn-dark btn-sm d-inline-flex align-items-center"
                             >
-                              Get Course
+                              explore school
                               <i className="fs-8 fas fa-angle-right ms-2" />
                             </Link>
                           </div>
@@ -695,7 +558,7 @@ const CourseList = () => {
                             />
                           </Link>
                           <div className="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-2" key={5} onClick={() => handleItemClick(1)}>
-                            <Link to="#" className={`like ${selectedItems[5]? 'selected':''}`}>
+                            <Link to="#" className={`like ${selectedItems[5] ? 'selected' : ''}`}>
                               <i className="isax isax-heart" />
                             </Link>
                           </div>
@@ -707,41 +570,39 @@ const CourseList = () => {
                                 <Link to="#">
                                   <ImageWithBasePath
                                     className="img-fluid rounded-circle"
-                                    src="./assets/img/avatar/avatar5.jpg"
+                                    src="./assets/img/avatar/avatar1.jpg"
                                     alt="img"
                                   />
                                 </Link>
                               </div>
-                              <p className="ms-2">
-                                <Link to={route.instructorDetails}>Justin Gregory</Link>
-                              </p>
+                              <h6 className="ms-2">
+                                <Link to={route.instructorDetails}>Sri Mahathi Vidyaapeeth</Link>
+                              </h6>
                             </div>
                             <span>
-                              <Link to="#" className="tag-btn">
-                                Programming
+                              <Link className="tag-btn" to="#">
+                                Board
                               </Link>
                             </span>
                           </div>
-                          <h4 className="mt-3 mb-2">
+                          <p className="mt-3 mb-2">
                             <Link to={route.courseDetails}>
-                              Learn JavaScript and Express to become a Expert
+                              Karmaghat X Road, near Indra‑Nagendra Theatre
                             </Link>
-                          </h4>
+                          </p>
                           <div className="d-flex align-items-center">
                             <p className="d-flex align-items-center mb-0">
-                              <i className="fa-solid fa-star text-warning me-2" />
-                              4.4 (180 Reviews)
+                              <i className="fa-solid fa-star text-warning me-2" /> 3.9
                             </p>
-                            <span className="dot" />
-                            <p>Intermediate</p>
+
                           </div>
                           <div className="d-flex justify-content-between mt-3 align-items-center">
-                            <h5 className="text-secondary">$130</h5>
+                            <h5 className="text-secondary">0.99kms</h5>
                             <Link
                               to={route.courseDetails}
                               className="btn btn-dark btn-sm d-inline-flex align-items-center"
                             >
-                              Get Course
+                              explore school
                               <i className="fs-8 fas fa-angle-right ms-2" />
                             </Link>
                           </div>
@@ -761,53 +622,51 @@ const CourseList = () => {
                             />
                           </Link>
                           <div className="position-absolute start-0 top-0 d-flex align-items-start w-100 z-index-2 p-2" key={6} onClick={() => handleItemClick(1)}>
-                            <Link to="#" className={`like ${selectedItems[6]? 'selected':''}`}>
+                            <Link to="#" className={`like ${selectedItems[6] ? 'selected' : ''}`}>
                               <i className="isax isax-heart" />
                             </Link>
                           </div>
                         </div>
-                        <div className="course-list-contents w-100 ps-0 ps-md-3 pt-4 pt-md-0">
+                         <div className="course-list-contents w-100 ps-0 ps-md-3 pt-4 pt-md-0">
                           <div className="d-flex flex-wrap align-items-center justify-content-between">
                             <div className="d-flex align-items-center">
                               <div className="avatar avatar-sm rounded-circle">
                                 <Link to="#">
                                   <ImageWithBasePath
                                     className="img-fluid rounded-circle"
-                                    src="./assets/img/avatar/avatar6.jpg"
+                                    src="./assets/img/avatar/avatar1.jpg"
                                     alt="img"
                                   />
                                 </Link>
                               </div>
-                              <p className="ms-2">
-                                <Link to={route.instructorDetails}>Carolyn Hines</Link>
-                              </p>
+                              <h6 className="ms-2">
+                                <Link to={route.instructorDetails}>Sri Saraswathi High School</Link>
+                              </h6>
                             </div>
                             <span>
-                              <Link to="#" className="tag-btn">
-                                Programming
+                              <Link className="tag-btn" to="#">
+                                Board
                               </Link>
                             </span>
                           </div>
-                          <h4 className="mt-3 mb-2">
+                          <p className="mt-3 mb-2">
                             <Link to={route.courseDetails}>
-                              Introduction to Python Programming
+                              Shubodaya Colony, Sankaramma Colony
                             </Link>
-                          </h4>
+                          </p>
                           <div className="d-flex align-items-center">
                             <p className="d-flex align-items-center mb-0">
-                              <i className="fa-solid fa-star text-warning me-2" />
-                              4.7 (130 Reviews)
+                              <i className="fa-solid fa-star text-warning me-2" /> 3.9
                             </p>
-                            <span className="dot" />
-                            <p>Expert</p>
+
                           </div>
                           <div className="d-flex justify-content-between mt-3 align-items-center">
-                            <h5 className="text-secondary">$150</h5>
+                            <h5 className="text-secondary">0.33kms</h5>
                             <Link
                               to={route.courseDetails}
                               className="btn btn-dark btn-sm d-inline-flex align-items-center"
                             >
-                              Get Course
+                              explore school
                               <i className="fs-8 fas fa-angle-right ms-2" />
                             </Link>
                           </div>

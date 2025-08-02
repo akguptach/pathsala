@@ -5,7 +5,6 @@ import Topcourses from './section/top-courses'
 import Trust from './section/trust'
 import Featuredcourse from './section/featured-course'
 import Community from './section/community'
-import Clinet from './section/clinet'
 import Howitworks from './section/how-it-works'
 import Featureinstructor from './section/feature-instructor'
 import Faq from './section/faq'
@@ -26,7 +25,6 @@ const HomeOne = () => {
       <Trust/> */}
       <Featuredcourse />
       <Community />
-      {/* <Clinet /> */}
       {/* <Howitworks /> */}
       {/* <Featureinstructor /> */}
       <Testimonials />

@@ -102,7 +102,7 @@ const Header = () => {
   const getDynamicRoute = (menuItem: any) => {
     switch (menuItem.tittle) {
       case "Explore Schools":
-        return all_routes.schoolList; // Replace with the actual route for "Explore Schools"
+        return all_routes.courseGrid; // Replace with the actual route for "Explore Schools"
       case "AddSchools":
         return all_routes.addschool; // Replace with the actual route for "AddSchools"
       // case "Compare":
